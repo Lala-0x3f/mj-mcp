@@ -1,0 +1,21 @@
+[project]
+name = "midjourney-mcp"
+version = "0.1.0"
+description = "A MCP server for generating images with Midjourney"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "curl-cffi>=0.10.0",
+    "httpx>=0.28.1",
+    "mcp[cli]>=1.6.0",
+]
+
+[project.scripts]
+midjourney-mcp = "midjourney_mcp.midjourney:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+include-package-data = true
+
+[tool.setuptools.packages.find]
+where = ["src"]
