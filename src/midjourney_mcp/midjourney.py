@@ -15,6 +15,7 @@ mcp = FastMCP("midjourney")
 AuthUserTokenV3_r = os.getenv("TOKEN_R")
 AuthUserTokenV3_i = os.getenv("TOKEN_I")
 api_base = os.getenv("API_BASE", "midjourney.com")
+suffix = os.getenv("SUFFIX", "--v 6.1")
 
 
 def init_cookies(r: str, i: str) -> dict:
@@ -197,7 +198,7 @@ async def make_request(prompt: str, aspect_ratio: str):
     WSToken = get_websocket_token(cookies)
     if not WSToken:
         return {"error": "Failed to get websocket token"}
-    job_id = submit_job(f"{prompt} --ar {aspect_ratio} --v 6.1", cookies, api_base)
+    job_id = submit_job(f"{prompt} --ar {aspect_ratio} {suffix}", cookies, api_base)
     job_status = await get_job_status(job_id, WSToken)
     return job_status
 

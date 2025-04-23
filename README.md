@@ -15,7 +15,8 @@ A MCP server implementation for generating images with Midjourney.
         }
     }
 
-}```
+}
+```
 
 
 - `TOKEN_R`: Midjourney auth token R

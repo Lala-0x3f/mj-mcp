@@ -3,6 +3,7 @@ name = "midjourney-mcp"
 version = "0.1.0"
 description = "A MCP server for generating images with Midjourney"
 readme = "README.md"
+license = "GPL-3.0"
 requires-python = ">=3.10"
 dependencies = [
     "curl-cffi>=0.10.0",
