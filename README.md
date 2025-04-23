@@ -22,6 +22,7 @@ A MCP server implementation for generating images with Midjourney.
 - `TOKEN_R`: Midjourney auth token R
 - `TOKEN_I`: Midjourney auth token I
 - `API_BASE`: Midjourney API base URL (optional, defaults to "midjourney.com")
+- `SUFFIX`: Midjourney suffix (optional, defaults to "--v 6.1")
 
 
 ## API

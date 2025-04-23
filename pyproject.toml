@@ -1,6 +1,6 @@
 [project]
 name = "midjourney-mcp"
-version = "0.1.0"
+version = "0.1.1"
 description = "A MCP server for generating images with Midjourney"
 readme = "README.md"
 license = "GPL-3.0"
